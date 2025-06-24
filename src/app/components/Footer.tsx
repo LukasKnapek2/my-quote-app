@@ -58,8 +58,11 @@ export default function Footer() {
   }, []); 
 
 
-  return (
-    <footer className="bg-gray-800 text-white p-4 text-center shadow-inner">
+ return (
+    // 'mb-4' for margin-bottom.
+    // 'mx-4' for margin-left and margin-right.
+    // 'rounded-lg' for smooth edges.
+    <footer className="bg-gray-800 text-white p-4 text-center shadow-inner mt-auto mb-4 mx-4 rounded-lg">
       <div className="container mx-auto">
         <p className="text-sm">
           Visitor Count:{' '}
