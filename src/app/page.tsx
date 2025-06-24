@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { getRandomDevQuote } from '@/utils/quotes';
+import Footer from '@/app/components/Footer';
 
 export default function Home() {
   const [quote, setQuote] = useState<string>("Loading Chuck Norris wisdom...");
@@ -69,13 +70,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white p-4 text-center shadow-inner">
-        <div className="container mx-auto">
-          <p className="text-sm">Visitor Count: <span className="font-bold">0</span> (Placeholder)</p>
-          <p className="text-sm mt-1">&copy; {new Date().getFullYear()} My Quote App</p>
-        </div>
-      </footer>
+    <Footer />
     </div>
   );
 }
