@@ -88,13 +88,13 @@ export default function Home() {
             <div className="text-center mb-6">
               {loading ? (
                 <p className="text-lg italic text-gray-600">
-                  Summoning Chuck Norris's thoughts...
+                  Summoning Chuck Norris&apos;s thoughts...
                 </p>
               ) : error ? (
                 <p className="text-lg text-red-500">{error}</p>
               ) : (
                 <p className="text-xl font-medium text-gray-800 break-words">
-                  "{quote}"
+                  &quot;{quote}&quot;
                 </p>
               )}
             </div>
