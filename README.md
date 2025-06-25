@@ -1,6 +1,5 @@
 # Chuck Norris Wisdom App
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/[YOUR_NETLIFY_SITE_ID]/deploy-status)
 ## Project Overview
 
 This is a modern web application built with **Next.js 14 (App Router)** and **TypeScript** that delivers daily doses of Chuck Norris wisdom. It demonstrates robust frontend development practices, seamless API integration, serverless function utilization, and a clean, responsive user interface.
@@ -8,8 +7,8 @@ This is a modern web application built with **Next.js 14 (App Router)** and **Ty
 ## 🚀 Live Demo
 
 Experience the application live here:
-**[https://[YOUR-NETLIFY-APP-URL-HERE].netlify.app](https://[YOUR-NETLIFY-APP-URL-HERE].netlify.app)**
-*(Replace `[YOUR-NETLIFY-APP-URL-HERE]` with your actual Netlify deployment URL)*
+[Netlify Demo](https://my-quote-app-chucknorris.netlify.app)
+
 
 ## ✨ Features
 
@@ -35,6 +34,7 @@ Experience the application live here:
 
 ## 🏗️ Project Structure
 
+```
 ├── public/                 # Static assets like images (e.g., chucknorris.png)
 ├── src/
 │   ├── app/                # Next.js App Router root
@@ -49,6 +49,7 @@ Experience the application live here:
 ├── .env.example            # Example for environment variables
 ├── package.json            # Project dependencies and scripts
 └── README.md               # This file
+```
 
 ## 🚀 Getting Started (Local Development)
 
