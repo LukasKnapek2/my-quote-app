@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import { getRandomDevQuote } from "@/utils/quotes";
 import Footer from "@/app/components/Footer";
 import WSLogo from "@/app/components/WSLogo";
+import Image from 'next/image';
 
 export default function Home() {
   // State management for the displayed quote, loading status, and error handling.
@@ -74,11 +75,14 @@ export default function Home() {
         <div className="flex-grow flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
           {/* Image Container: Occupies half width on larger screens, full width on small screens. */}
           <div className="w-full md:w-1/2 max-w-sm md:max-w-none p-4">
-            <img
-              src="/chucknorris.png" // Static asset served from the public directory.
-              alt="Chuck Norris" // Essential for accessibility and SEO.
-              className="rounded-lg shadow-md w-full h-auto object-cover"
-            />
+<Image
+  src="/chucknorris.png"
+  alt="Chuck Norris"
+  width={1024} 
+  height={1536} 
+  className="rounded-lg shadow-md w-full h-auto object-cover"
+  priority // Add 'priority' if this image is above the fold (visible when the page first loads)
+/>
           </div>
 
           {/* Quote and Button Group: Styled to be vertically and horizontally centered
