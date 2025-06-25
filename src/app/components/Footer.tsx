@@ -15,7 +15,7 @@ export default function Footer() {
     async function fetchAndIncrementCount() {
       try {
         // Fetch the current visitor count (GET request)
-        const getResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/visitor-count`, {
+        const getResponse = await fetch('/api/visitor-count', {
           method: 'GET',
           cache: 'no-store', // Ensures the browser doesn't use stale cache
         });
@@ -31,7 +31,7 @@ export default function Footer() {
         setVisitorCount(data.count); // Update state with the fetched count
 
         // Increment the visitor count (POST request)
-        const postResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/visitor-count`, {
+        const postResponse = await fetch('/api/visitor-count', {
           method: 'POST',
           // cache: 'no-store' is generally good for POSTs as well
           cache: 'no-store',
